@@ -1,0 +1,14 @@
+body {
+  font: 14px "Open Sans", "Arial", sans-serif;
+}
+
+.container {
+  margin: auto;
+  background: paleturquoise;
+  height: 800px;
+}
+
+video {
+  margin-top: 2px;
+  border: 1px solid black;
+}

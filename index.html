@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Screen capture api Demo</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>
+        Click the "Start" button to begin video recording. You can stop the
+        video by clicking the creatively-named "Stop" button. The "Download"
+        button will download the received data
+      </h3>
+      <br />
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h2>Preview</h2>
+          <video id="preview" width="300" height="200" autoplay muted></video>
+          <button id="startButton" class="btn btn-primary mt-2">
+            Start Recording
+          </button>
+          <button id="stopButton" class="btn btn-danger mt-2">
+            Stop Recording
+          </button>
+          <div>
+            <pre id="log"></pre>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h2>Recording</h2>
+          <video id="recording" width="300" height="200" controls></video>
+          <br />
+          <a id="downloadButton" class="btn btn-success mt-2"> Download </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
